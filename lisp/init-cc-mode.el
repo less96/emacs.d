@@ -81,7 +81,8 @@
       ;; emacs 24.4+ will set up eldoc automatically.
       ;; so below code is NOT needed.
       (eldoc-mode 1))
-    ))
+    )
+  (c-set-offset 'case-label 4))
 (add-hook 'c-mode-common-hook 'c-mode-common-hook-setup)
 
 (provide 'init-cc-mode)
