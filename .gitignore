@@ -58,3 +58,4 @@ projectile.cache
 srecode-map.el
 .smex-items
 bookmarks
+custom-set-variables.el
