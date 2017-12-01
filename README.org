@@ -6,7 +6,31 @@ Re-fork from redguardtoo/emacs.d because moving to emacs 25
 Regarding learning emacs, I recommend redguardtoo's [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide][mastering emacs in one year guide]]
 
 Following contents are the original readme
-=======
+* Features
+- Efficient. Emacs *starts up in one second*
+- Robust. Emacs will never crash after a full package upgrade
+- Support Windows. You won't get inferior performance on Windows
+- Original setup (key bindings, directories ...) of Emacs and 3rd party packages are respected
+- Usable in [[https://packages.debian.org/emacs-nox][emacs-nox]], all key bindings and functionality still usable when you ssh to server with [[http://www.putty.org/][PuTTY]]
+- Robust, you can install packages without network access
+- Popular programming languages are supported, C/C++/Java/Ruby/Perl/Python/C#/Lua/Javascript ...
+* Checklist
+- Tested with Emacs 24.3, 24.4, 24.5, 25.3 on Linux/Windows/Cygwin/macOS (I will stop 24.3 support at <2018-01-01>)
+- Please read FAQ to disable [[http://www.vim.org][Vim]] key bindings
+- Please read section "Key bindings" to learn key bindings
+- If you use Windows Emacs, you have to [[https://emacs.stackexchange.com/questions/27202/how-do-i-install-gnutls-for-emacs-25-1-on-windows][install GnuTLS Dlls manually]] to be able to install packages from remote repositories. Or else you got error message like =error: Package `async-' is unavailble= on Windows
+- Most packages from [[http://melpa.org][MELPA]] are *invisible* while packages from [[https://stable.melpa.org][MELPA Stable]] are visible. You can modify variable =melpa-include-packages= in =~/.emacs.d/lisp/init-elpa.el= to install unstable packages
+- Please read section "About Emacs 23" if you uses Emacs 23.4
+- Other issues are covered in FAQ
+* Installation
+Most users should follow the section "Install in normal way".
+
+You need the section "Install stable version in easiest way" *if and only if*:
+- You are newbie, knowing nothing about Linux/Unix
+- You are living in North Korea without internet access
+** Install in normal way
+Please remove the file =~/.emacs.d/init.el= and =~/.emacs=. =~= means [[https://en.wikipedia.org/wiki/Home_directory][Home directory]].
+
 Please uninstall any package which is not installed at =~/.emacs.d=. For example, run =apt-get autoremove emacs-w3m= on Debian/Ubuntu.
 
 If you don't know what I mean, then *do nothing*.
@@ -464,4 +488,4 @@ We use [[https://github.com/abo-abo/lispy/tree/0.26.0][lispy]] and [[https://git
 - If you are *sure* it's my issue, file bug report at [[https://github.com/redguardtoo/emacs.d]]. Don't email me directly!
 
 Bug report should include details (OS, Emacs version ...).
->>>>>>> 63583c560ca337fecc7af55427f1653b50b5dc84
+
