@@ -3,8 +3,9 @@ This is my emacs configuration
 
 Re-fork from redguardtoo/emacs.d because moving to emacs 25
 
-<<<<<<< HEAD
 Regarding learning emacs, I recommend redguardtoo's [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide][mastering emacs in one year guide]]
+
+Following contents are the original readme
 =======
 Please uninstall any package which is not installed at =~/.emacs.d=. For example, run =apt-get autoremove emacs-w3m= on Debian/Ubuntu.
 
