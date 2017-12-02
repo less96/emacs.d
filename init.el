@@ -180,3 +180,7 @@
 ;;; no-byte-compile: t
 ;;; End:
 (put 'erase-buffer 'disabled nil)
+
+;; zenburn theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/site-lisp/color-theme-zenburn/")
+(load-theme 'zenburn t)

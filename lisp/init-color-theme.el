@@ -26,9 +26,8 @@ Fallback theme is used only if the console does NOT support 256 colors."
     (setq my-current-color-theme "fallback"))
    (t
     ;; {{ enable my favourite color theme
-    (unless (featurep 'zenburn-theme)
-      (require 'zenburn-theme))
-    (load-theme 'zenburn t)
+    ;; (unless (featurep 'zenburn-theme)
+    ;;   (require 'zenburn-theme))
     ;; }}
     (setq my-current-color-theme "favorite"))))
 ;; turn on the color theme now!
