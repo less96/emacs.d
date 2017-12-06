@@ -184,3 +184,7 @@
 ;; zenburn theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/site-lisp/color-theme-zenburn/")
 (load-theme 'zenburn t)
+
+;; auto update gtags when save file
+(add-hook 'after-save-hook 'counsel-gtags-update-tags)
+
