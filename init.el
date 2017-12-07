@@ -137,6 +137,8 @@
   ;; need statistics of keyfreq asap
   (require 'init-keyfreq)
   (require 'init-httpd)
+  ;; I need to use fold commands immediately
+  (require 'init-hs-minor-mode)
 
   ;; projectile costs 7% startup time
 
@@ -155,7 +157,6 @@
                                init-misc-lazy
                                init-which-func
                                init-fonts
-                               init-hs-minor-mode
                                init-writting
                                init-pomodoro
                                init-artbollocks-mode
