@@ -137,8 +137,6 @@
   ;; need statistics of keyfreq asap
   (require 'init-keyfreq)
   (require 'init-httpd)
-  ;; I need to use fold commands immediately
-  (require 'init-hs-minor-mode)
 
   ;; projectile costs 7% startup time
 
@@ -182,10 +180,9 @@
 ;;; End:
 (put 'erase-buffer 'disabled nil)
 
-;; zenburn theme
+;; load zenburn theme
+;; put this into ~/.custom.el doesn't work
+;; do it after everything else
 (add-to-list 'custom-theme-load-path "~/.emacs.d/site-lisp/color-theme-zenburn/")
 (load-theme 'zenburn t)
-
-;; auto update gtags when save file
-(add-hook 'after-save-hook 'counsel-gtags-update-tags)
 
