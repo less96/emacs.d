@@ -106,7 +106,7 @@ But my =w3m= based utilities can open video/audio/image with the help of =w3m=. 
 - I force the dictionary to "en_US" in =~/.emacs./lisp/init-spelling.el=. You can modify it.
 - I recommend aspell for programmers. Non-programmers find hunspell is better on typo correction
 
-If you use hunspell, check [[http://blog.binchen.org/posts/what-s-the-best-spell-check-set-up-in-emacs.html][my article]]. Please note the hunspell executable understands either unix format path or windows format path but not both. You need figure out hunspell version you are using.
+If you use hunspell, check [[http://blog.binchen.org/posts/what-s-the-best-spell-check-set-up-in-emacs.html][my article]]. Please note the hunspell executable cannot understand both unix format path and windows format path at the same time. You need figure out hunspell version you are using.
 **** sbcl (lisp environment)
 - Required by lisp =slime=
 - Install through OS package manager
