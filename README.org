@@ -8,7 +8,7 @@ Regarding learning emacs, I recommend redguardtoo's [[https://github.com/redguar
 Following contents are the original readme
 * Features
 - Efficient. Emacs *starts up in one second*
-- Robust. Emacs never crash after a full package upgrade
+- Robust. Emacs will never crash after a full package upgrade
 - Support Windows. You won't get inferior performance on Windows
 - Original setup (key bindings, directories ...) of Emacs and 3rd party packages are respected
 - Usable in [[https://packages.debian.org/emacs-nox][emacs-nox]], all key bindings and functionality still usable when you ssh to server with [[http://www.putty.org/][PuTTY]]
@@ -261,8 +261,6 @@ Search below code in =~/.emacs.d/lisp/init-color-theme.el= and replace "molokai"
   (require 'color-theme-molokai))
 (color-theme-molokai)
 #+END_SRC
-
-Please note =M-x color-theme-select= *may not work* because of some design flaw in Emacs.
 
 There is *NO unified way* to enable color theme because two color theme systems exist. You need read color theme's documentation at first.
 
