@@ -378,7 +378,7 @@ I strongly suggest [[http://www.cygwin.com/][Cygwin]] version of Emacs. But nati
 
 By default, environment variable =HOME= points to the directory =C:\Users\<username>= on Windows 7+. You need copy the folder =.emacs.d= into that directory. Or you can setup =HOME=.
 ** Yasnippet
-- Instead of =M-x yas-expand= or pressing =TAB= key, you can press =M-j= instead.
+- Instead of =M-x yas-expand= or pressing =TAB= key, you can press =M-j=.
 - Yasnippet works out of box. But you can =M-x my-yas-reload-all= to force Yasnippet compile all the snippets. If you run =my-yas-reload-all= once, you need always to run it when you update the snippets. The purpose of =my-yas-reload-all= is to optimize the Emacs startup only. IMO, it's not worth the effort.
 - You can add your snippets into =~/.emacs.d/snippets=.
 - Run =grep -rns  --exclude='.yas*' 'key:' *= in =~/.emacs.d/snippets= to see my own snippets
