@@ -8,7 +8,7 @@ Regarding learning emacs, I recommend redguardtoo's [[https://github.com/redguar
 Following contents are the original readme
 * Features
 - Efficient. Emacs *starts up in one second*
-- Robust. Emacs never crash after a full package upgrade
+- Robust. Emacs will never crash after a full package upgrade
 - Support Windows. You won't get inferior performance on Windows
 - Original setup (key bindings, directories ...) of Emacs and 3rd party packages are respected
 - Usable in [[https://packages.debian.org/emacs-nox][emacs-nox]], all key bindings and functionality still usable when you ssh to server with [[http://www.putty.org/][PuTTY]]
@@ -289,7 +289,7 @@ A generic grep program =counsel-etags-grep= is provided if you don't use =git=. 
 
 Multi-edit workflow is optimized. After =M-x counsel-etags-grep= or pressing ",qq", press =C-c C-o C-x C-q= to enable =wgrep-mode=. You can edit text (for example, delete lines) in =wgrep-mode= directly.
 
-You can specify the ignore regex like =!keyword1= in =ivy=. If you want to ignore multiple keywords, you *must* use syntax like =!keyword1\|!keyword2=. As I tested in counsel v0.9.1, non of its grep commands supports ignore syntax *reliably*. So I suggest using =counsel-etags-grep= instead.
+You can specify the ignore regex like =!keyword1= in =ivy=. If you want to ignore multiple keywords, you *must* use syntax like =!keyword1\|!keyword2=. But ignore syntax not work correctly in counsel, so I suggest using =counsel-etags-grep= instead.
 ** Hydra/Swiper/Counsel/Ivy
 I love all the packages from [[https://github.com/abo-abo][Oleh Krehel (AKA abo-abo)]]. Every article from his [[https://oremacs.com/][blog]] is worth reading ten times.
 ** js2-mode
