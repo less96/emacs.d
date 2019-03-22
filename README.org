@@ -90,7 +90,7 @@ Please note you can't install =fortune-zh= through [[https://brew.sh/][homebrew]
 - Required by =emacs-w3m=
 - Install through OS package manager
 
-You can insert =(setq mm-text-html-renderer 'w3m)= in =~/.gnus.el= to force HTML mail be rendered by =w3m= instead of the default HTML rendering engine =shr=.
+You can insert =(setq mm-text-html-renderer 'w3m)= in =~/.gnus.el= to force HTML mail be rendered by =w3m= instead of =shr=, the default HTML rendering engine.
 
 =shr= supports COLOR while =w3m= not.
 
